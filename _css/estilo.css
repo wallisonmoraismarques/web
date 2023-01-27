@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/*mexendo agora com todo o corpo da pagina*/
+ body{
+
+    color: white;
+ }
+ div#img{
+  background: url("../_imagens/pexels-cottonbro-studio-8721328\ \(1\).jpg");
+ }
+ 
+ p {
+   text-align: justify;
+   text-indent: 50px;
+ }
+
+/* fromatacão de imagens*/
+figure.imagens{
+  position: relative;
+  border: 7px solid rgb(235, 235, 238);
+  box-shadow: 1px 1px 4px black;
+}
+figure.imagens img{
+  width: 100%;
+  height: 100%;
+}
+figure.imagens figcaption{
+  opacity: 0;
+  position:absolute;
+  top: 0px;
+  background-color:rgb(0,0,0,.4);
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity 1s;
+}
+figure.imagens:hover figcaption{
+  opacity: 1;
+}
+
+div#interface{
+  width: 955px;
+  margin: -20px auto 10px auto; /* para centralisar o texto*/
+  box-shadow: 0px 0px 10px black;
+  padding: 10px ; /* usa para arrumar a letra da pagina*/
+}
+
+header#cabecalho h1{
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+/* formatacao do menu*/
+nav#menu{
+  display:block;
+}
+nav#menu ul{
+  list-style: none;
+  text-transform:uppercase;
+  position: absolute;
+  top: 20px;
+  left: 400px;
+
+}
+nav#menu li{
+  display:inline-block;
+  padding: 10px;
+  margin: 2px;
+  text-decoration: aliceblue;
+}
+nav#menu li:hover{
+  background-color: rgb(25, 10, 82);
+}
+nav#menu a{
+  color: rgb(12, 12, 200);
+  text-decoration: none;
+}
+nav#menu a:hover{
+  color: white;
+}
+h1#comeco {
+  text-align: center;
+}
+/* comecando aqui a mexer no cabecalho*/
+header#cabecalho{
+  border-bottom: 1px white solid;
+  height: 110px;
+  background: url();
+}
+header#cabecalho h1{
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  color: aliceblue;
+  text-shadow: 1px 1px 1px white;
+  margin-top: 5px;
+}
+section#corpo{
+  display: block;
+  width: 550px;
+  float: left;
+  border-right:1px solid white ;
+  padding-right: 15px ;
+}
+aside#lateral{
+  display: block;
+  width: 350px;
+  float: right;
+}
+footer#rodape{
+  clear: both;
+  border-top:1px solid white ;
+}
+footer#rodape p{
+  text-align: center;
+}
